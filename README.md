@@ -12,4 +12,7 @@ An application which generates random Dad Jokes with features to share and rate.
 ## Limitations
 * Only current reactions are stored. No backend or local storage used.
 
+## Note:
+* The application uses Dadjokes API which is available in API Ninja, please Sign Up there to get your API key.
+
 
