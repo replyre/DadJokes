@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Have a Laugh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="lol.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="share-container">
+      <a href="#" id="facebook" onclick="post('facebook')">
+        <i class="fab fa-facebook"></i
+      ></a>
+      <a href="#" id="linkedin" onclick="post('linkedin')">
+        <i class="fab fa-linkedin"></i
+      ></a>
+      <a href="#" id="twitter" onclick="post('twitter')">
+        <i class="fab fa-twitter"></i
+      ></a>
+      <a href="#" id="whatsapp" onclick="post('whatsapp')">
+        <i class="fab fa-whatsapp"></i
+      ></a>
+    </div>
+    <div class="container">
+      <h1 class="heading">Dad Jokes</h1>
+      <p class="joke" id="joke">Click to have laugh</p>
+      <div class="react">
+        <div id="laugh" class="icon" onclick="react('laugh')">
+          😂
+          <span id="laugh_count" class="text"></span>
+        </div>
+        <div id="em" class="icon" onclick="react('em')">
+          😅
+          <span id="em_count" class="text"></span>
+        </div>
+        <div id="dead" class="icon" onclick="react('dead')">
+          💀
+          <span id="dead_count" class="text"></span>
+        </div>
+      </div>
+      <button id="btn">Tell Me a Joke</button>
+    </div>
+    <script src="index.js"></script>
+    <div class="error" style="display: none">
+      <p>hello world</p>
+    </div>
+  </body>
+</html>
